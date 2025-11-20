@@ -82,7 +82,96 @@
     <p>Belajar bahasa Inggris dengan metode kreatif, interaktif, dan ramah untuk semua usia. Kami menghadirkan pengalaman belajar yang menarik dan penuh percaya diri.</p>
   </section>
 
-  <section class="section">
+  <section class="section" id="programs">
+    <h2 style="text-align:center; color:#0A6F5C;">Program Kami</h2>
+    <style>
+      .card {
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      }
+      .program-btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 18px;
+        background: linear-gradient(135deg, #1dbf73, #0a6f5c);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+      .program-btn:hover {
+        opacity: 0.85;
+      }
+      .icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <div class="card-container">
+      <div class="card" style="border-top:6px solid #00A86B;">
+        <div class="icon">📘</div>
+        <h3>Beginner (Kelas 1–3 SD)</h3>
+        <p>Pengenalan kosakata dasar, phonics, membaca awal, dan aktivitas belajar menyenangkan.</p>
+        <a class="program-btn">Pelajari Program</a>
+      </div>
+
+      <div class="card" style="border-top:6px solid #32CD32;">
+        <div class="icon">📗</div>
+        <h3>Elementary (Kelas 4–6 SD)</h3>
+        <p>Grammar dasar, membaca, menulis, percakapan sederhana, serta latihan proyek mini.</p>
+        <a class="program-btn">Pelajari Program</a>
+      </div>
+
+      <div class="card" style="border-top:6px solid #2E8B57;">
+        <div class="icon">📙</div>
+        <h3>Junior High School (SMP)</h3>
+        <p>Meningkatkan speaking, reading comprehension, grammar, dan vocabulary untuk sekolah.</p>
+        <a class="program-btn">Pelajari Program</a>
+      </div>
+
+      <div class="card" style="border-top:6px solid #228B22;">
+        <div class="icon">📕</div>
+        <h3>Senior High School (SMA)</h3>
+        <p>Academic English, writing, public speaking, dan persiapan masuk perguruan tinggi.</p>
+        <a class="program-btn">Pelajari Program</a>
+      </div>
+
+      <div class="card" style="border-top:6px solid #1DBF73;">
+        <div class="icon">🗣️</div>
+        <h3>General English Program (GEP)</h3>
+        <p>Program umum untuk semua usia: komunikasi sehari-hari, grammar, dan fluency.</p>
+        <a class="program-btn">Pelajari Program</a>
+      </div>
+
+      <div class="card" style="border-top:6px solid #008080;">
+        <div class="icon">✏️</div>
+        <h3>Grammar Program</h3>
+        <p>Fokus pada struktur bahasa Inggris, tenses, sentence building, dan correction practice.</p>
+        <a class="program-btn">Pelajari Program</a>
+      </div>
+
+      <div class="card" style="border-top:6px solid #006400;">
+        <div class="icon">🎤</div>
+        <h3>Speaking Program</h3>
+        <p>Latihan berbicara intensif, pronunciation, role-play, dan meningkatkan kepercayaan diri.</p>
+        <a class="program-btn">Pelajari Program</a>
+      </div>
+
+      <div class="card" style="border-top:6px solid #4169E1;">
+        <div class="icon">📚</div>
+        <h3>TOEFL Preparation</h3>
+        <p>Latihan reading, structure, listening, teknik menjawab soal, dan simulasi TOEFL.</p>
+        <a class="program-btn">Pelajari Program</a>
+      </div>
+    </div>
+  </section>
     <h2 style="text-align:center; color:#0A6F5C;">Program Kami</h2>
     <div class="card-container">
       <div class="card">
@@ -100,7 +189,186 @@
     </div>
   </section>
 
-  <footer>
+  <!-- Pricing Section -->
+<section class="section" id="pricing">
+  <h2 style="text-align:center; color:#0A6F5C;">Paket Kursus</h2>
+
+  <style>
+    .pricing-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .price-card {
+      background: white;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      border-top: 8px solid #1DBF73;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .price-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .price-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #064f44;
+      margin-bottom: 10px;
+    }
+    .price-amount {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1DBF73;
+      margin: 10px 0;
+    }
+    .price-list {
+      text-align: left;
+      margin: 15px auto;
+      max-width: 220px;
+      line-height: 1.6;
+    }
+    .price-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: linear-gradient(135deg, #1dbf73, #0a6f5c);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+
+  <div class="pricing-container">
+
+    <div class="price-card" style="border-top-color:#00A86B; position:relative;">
+      <div style="position:absolute; top:-12px; right:-12px; background:#FFB300; color:white; padding:6px 12px; font-size:0.8rem; font-weight:bold; border-radius:6px; transform:rotate(8deg);">FAVORITE ⭐</div>
+      <div class="price-title">Beginner (1–3 SD)</div>
+      <div class="price-amount"><s style='color:#888; font-size:1rem;'>Rp 650.000</s><br><span style='color:#00A86B;'>Rp 600.000</span></div>
+      <div class="price-list">
+        ✓ Durasi 3 Bulan<br>
+        ✓ 8–12 Pertemuan/Bulan<br>
+        ✓ Modul Belajar<br>
+        ✓ Aktivitas Interaktif
+      </div>
+      <a class="price-btn" href="https://wa.me/6281219173499?text=Halo,%20saya%20ingin%20daftar%20program%20Beginner" target="_blank">Daftar via WhatsApp</a>
+    </div>
+
+    <div class="price-card" style="border-top-color:#32CD32; position:relative;">
+      <div style="position:absolute; top:-12px; right:-12px; background:#00C853; color:white; padding:6px 12px; font-size:0.8rem; font-weight:bold; border-radius:6px; transform:rotate(8deg);">BEST DEAL 💥</div>
+      <div class="price-title">Elementary (4–6 SD)</div>
+      <div class="price-amount"><s style='color:#888; font-size:1rem;'>Rp 650.000</s><br><span style='color:#32CD32;'>Rp 600.000</span></div>
+      <div class="price-list">
+        ✓ Durasi 3 Bulan<br>
+        ✓ Grammar Dasar<br>
+        ✓ Reading & Writing<br>
+        ✓ Speaking Practice
+      </div>
+      <a class="price-btn" href="https://wa.me/6281219173499?text=Halo,%20saya%20ingin%20daftar%20program%20Elementary" target="_blank">Daftar via WhatsApp</a>
+    </div>
+
+    <div class="price-card" style="border-top-color:#2E8B57; position:relative;">
+      <div style="position:absolute; top:-12px; right:-12px; background:#2E8B57; color:white; padding:6px 12px; font-size:0.8rem; font-weight:bold; border-radius:6px; transform:rotate(8deg);">POPULAR ⭐</div>
+      <div class="price-title">Junior High School (SMP)</div>
+      <div class="price-amount"><s style='color:#888; font-size:1rem;'>Rp 650.000</s><br><span style='color:#2E8B57;'>Rp 600.000</span></div>
+      <div class="price-list">
+        ✓ Durasi 3 Bulan<br>
+        ✓ Reading Comprehension<br>
+        ✓ Grammar & Vocabulary<br>
+        ✓ Speaking Fluency
+      </div>
+      <a class="price-btn" href="https://wa.me/6281219173499?text=Halo,%20saya%20ingin%20daftar%20program%20SMP" target="_blank">Daftar via WhatsApp</a>
+    </div>
+
+    <div class="price-card" style="border-top-color:#228B22; position:relative;">
+      <div style="position:absolute; top:-12px; right:-12px; background:#228B22; color:white; padding:6px 12px; font-size:0.8rem; font-weight:bold; border-radius:6px; transform:rotate(8deg);">RECOMMENDED ✔</div>
+      <div class="price-title">Senior High School (SMA)</div>
+      <div class="price-amount"><s style='color:#888; font-size:1rem;'>Rp 650.000</s><br><span style='color:#228B22;'>Rp 600.000</span></div>
+      <div class="price-list">
+        ✓ Durasi 3 Bulan<br>
+        ✓ Academic English<br>
+        ✓ Writing & Public Speaking<br>
+        ✓ TOEFL Basics
+      </div>
+      <a class="price-btn" href="https://wa.me/6281219173499?text=Halo,%20saya%20ingin%20daftar%20program%20SMA" target="_blank">Daftar via WhatsApp</a>
+    </div>
+
+    <div class="price-card" style="border-top-color:#1DBF73; position:relative;">
+      <div style="position:absolute; top:-12px; right:-12px; background:#1DBF73; color:white; padding:6px 12px; font-size:0.8rem; font-weight:bold; border-radius:6px; transform:rotate(8deg);">PREMIUM 🌟</div>
+      <div class="price-title">General English Program (GEP)</div>
+      <div class="price-amount"><s style='color:#888; font-size:1rem;'>Rp 1.500.000</s><br><span style='color:#1DBF73;'>Rp 1.000.000</span></div>
+      <div class="price-list">
+        ✓ Durasi 3 Bulan<br>
+        ✓ Speaking & Listening<br>
+        ✓ Grammar & Fluency<br>
+        ✓ Suitable for All Ages
+      </div>
+      <a class="price-btn" href="https://wa.me/6281219173499?text=Halo,%20saya%20ingin%20daftar%20program%20GEP" target="_blank">Daftar via WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="section" id="gallery">
+  <h2 style="text-align:center; color:#0A6F5C;">Gallery Foto</h2>
+  <p style="text-align:center; max-width:600px; margin:auto;">
+    Dokumentasi kegiatan belajar di Dynamic English Course Bekasi
+  </p>
+
+  <style>
+    .gallery-container {
+      margin-top:30px;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+    }
+    .gallery-container img {
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition:transform .25s ease, box-shadow .25s ease;
+    }
+    .gallery-container img:hover {
+      transform: scale(1.05);
+      box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    }
+  </style>
+
+  <div class="gallery-container">
+    <img src="IMG-20251022-WA0042.jpg" alt="Gallery Photo 1" />
+    <img src="IMG-20251022-WA0042.jpg" alt="Gallery Photo 2" />
+    <img src="IMG-20251022-WA0042.jpg" alt="Gallery Photo 3" />
+  </div>
+</section>
+
+<!-- Contact / Google Maps Section -->
+<section class="section" id="contact">
+  <h2 style="text-align:center; color:#0A6F5C;">Lokasi Kami</h2>
+  <p style="text-align:center; max-width:600px; margin:auto;">
+    Kunjungi Dynamic English Course Bekasi di lokasi kami berikut:
+  </p>
+  <div style="margin-top:25px; display:flex; justify-content:center;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.275845413346!2d106.976550!3d-6.227540!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699b4fdd57bb0b%3A0x39c3d0689e3da893!2sPesantren%20Abas%20Jatisari!5e0!3m2!1sen!2sid!4v1700000000000"
+      width="100%" height="350" style="border:0; border-radius:15px; max-width:900px;"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!-- Enhanced Contact Info -->
+  <div style="margin-top:35px; text-align:center; font-size:1.1rem; color:#064f44;">
+    <p><strong>📍 Alamat:</strong><br>Jl. H. Jaiman No.66, Jatisari, Jatiasih, Bekasi</p>
+    <p><strong>🕒 Jam Operasional:</strong><br>Senin–Sabtu • 08.00 – 20.00</p>
+    <a href="https://wa.me/6281219173499?text=Halo,%20saya%20ingin%20bertanya%20tentang%20kursus%20Bahasa%20Inggris" target="_blank" style="display:inline-block; margin-top:15px; padding:12px 20px; background:#1dbf73; color:white; border-radius:10px; font-weight:bold; text-decoration:none; font-size:1.1rem;">💬 Chat via WhatsApp</a>
+  </div>
+
+  </section>
+<footer>
     © 2025 Dynamic English Course — Learn English Confidently
   </footer>
 </body>
